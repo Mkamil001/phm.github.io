@@ -21,8 +21,15 @@ module.exports = {
         amber: '#f59e0b',
         neutral: '#d4d4d4',
         transparent: 'transparent'
+      },
+      
+      fontFamily: {
+        'dmserif': ['DM Serif', 'serif'],
+        'com': ['Comfortaa', 'cursive'],
       }
+
     },
   },
   plugins: [],
 }
+

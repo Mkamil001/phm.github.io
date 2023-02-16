@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- tailwind Css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="relative container mx-auto p6 mt-4">
+
+    <!-- Flex container -->
+        <div class="flex items-center justify-between">
+
+            <!-- logo -->
+            <div class="pt-2">
+              <a href="./index.html">
+                <img class="ml-30 mr-70 h-7" src="img/ph1-logo.jpg" alt="logo"/>
+              </a>
+            </div>
+
+            <!-- menu items -->
+            <div class="hidden md:flex space-x-4 text-base font-bold mt-2 text-lg">
+                <a href="/index.html" class="hover:text-amber">Home</a>
+                <!-- <a href="./admission.html" class="hover:text-amber">Admissions</a> -->
+                <a href="./contact.html" class="hover:text-amber">Contact Us</a>
+                <a href="./about.html" class="hover:text-amber">About Us</a>
+                <!-- <a href="./gallery.html" class="hover:text-amber">Gallery</a> -->
+            </div>
+            <!-- Button -->
+            <a
+            href="./login.html"
+            class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+            >Sign in</a>
+
+            <!-- Hamburger Icon -->
+            <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <div class="md:hidden">
+            <div
+              id="menu"
+              class="relative flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+              <a href="./index.html">Home</a>
+              <!-- <a href="./admission.html">Admissions</a> -->
+              <a href="./contact.html">Contact Us</a>
+              <a href="./about.html">About Us</a>
+              <!-- <a href="./gallery.html">Gallery</a> -->
+            </div>
+          </div>
+    </div>
+    </nav>
+
+    <div class="flex-col-reverse h-screen grid place-items-center">
+        <div class="bg-white rounded-md shadow-md flex flex-row">
+            <!-- contact information form -->
+            <div class="bg-indigo-800 p-8 md:hover:scale-y-110 rounded-md transition md:block" id="contact_info">
+                <div class="flex justify-between">
+                    <h2 class="text-white text-xl">Contact Information</h2>
+                    <h2 class="text-white text-xs flex flex-row block cursor-pointer" id="swtich_to_contact_us">Contact Us <svg
+                            xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg></h2>
+                </div>
+                <div class="mt-6 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-slate-200 text-xs">Name :</h2>
+                        <p class="text-white text-xs">Precious Hearts Montessori</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-slate-200 text-xs">Email :</h2>
+                        <p class="text-white text-xs">preciousehearts.oyibi@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-slate-200 text-xs">Phone :</h2>
+                        <p class="text-white text-xs">+233 55 718 9826</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 flex flex-row">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-200 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-slate-200 text-xs">Address :</h2>
+                        <p class="text-white text-xs">Prayer camp, Afienya – Dodowa Rd, Oyibi</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- get in touch form -->
+            <div class="px-6 py-8" id="contact_us">
+                <div class="flex justify-between">
+                    <h2 class="text-indigo-800 text-xl">Get In Touch</h2>
+                    <h2 class="text-red-800 text-xs flex flex-row block cursor-pointer" id="swtich_to_contact_info">Contact Info <svg
+                            xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg></h2>
+                </div>
+                <input type="text" placeholder="Enter Your Name"
+                    class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
+                <input type="text" placeholder="Enter Your Email"
+                    class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
+                <input type="text" placeholder="Subject"
+                    class="w-full text-xs px-3 h-8 my-2 outline-none rounded-md border focus:shadow-sm"><br>
+                <textarea placeholder="Enter your Message here"
+                    class="w-full text-xs px-3 py-2 h-20 my-2 outline-none rounded-md border focus:shadow-sm resize-none"></textarea><br>
+                <input type="submit" value="Send"
+                    class="bg-blue-800 px-4 py-2 rounded-md text-white text-xs cursor-pointer hover:shadow-md">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="js/script.js"></script>
+</html>
